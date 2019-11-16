@@ -6,4 +6,6 @@
 .idea/modules.xml
 .idea/project-template.xml
 .idea/vcs.xml
+/out
+out
 algorithm.iml
