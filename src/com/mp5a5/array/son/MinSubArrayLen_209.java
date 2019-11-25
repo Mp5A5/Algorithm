@@ -24,7 +24,7 @@ public class MinSubArrayLen_209 {
             } else {//若滑窗之间的和大于等于s，左边框右移，sum减小
                 if (right - left < len) //若当前符合条件的连续子数组比ans内记录的长度更小，则更新ans值
                     len = right - left + 1;
-                sum = sum - nums[left++];
+                sum -= nums[left++];
             }
 
 
