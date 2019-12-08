@@ -9,7 +9,7 @@ package com.mp5a5.array.son;
  * 输出: [24,12,8,6]
  */
 
-public class ProductExceptSelf_228 {
+public class ProductExceptSelf_238 {
     public int[] productExceptSelf(int[] nums) {
 
         if (nums == null || nums.length == 0) return null;

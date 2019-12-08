@@ -11,6 +11,7 @@ package com.mp5a5.array.son;
  */
 public class MinSubArrayLen_209 {
 
+    // 窗口滑动方法
     public int minSubArrayLen(int s, int[] nums) {
         if (nums == null || nums.length == 0) return 0;
         int left = 0;
