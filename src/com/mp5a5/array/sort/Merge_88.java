@@ -64,7 +64,7 @@ public class Merge_88 {
     }
 
     // 双指针 / 从后往前
-    public void merge3(int[] nums1, int m, int[] nums2, int n) {
+    public int[] merge3(int[] nums1, int m, int[] nums2, int n) {
         int p1 = m - 1;
         int p2 = n - 1;
         int p = m + n - 1;
@@ -72,12 +72,13 @@ public class Merge_88 {
             nums1[p--] = (nums1[p1] < nums2[p2]) ? nums2[p2--] : nums1[p1--];
         }
         System.arraycopy(nums2, 0, nums1, 0, p2 + 1);
+        return nums1;
     }
 
     @Test
     public void test() {
         int[] a = {1, 2, 3, 0, 0, 0};
         int[] b = {2, 5, 6};
-        System.out.println(Arrays.toString(merge2(a, 3, b, 3)));
+        System.out.println(Arrays.toString(merge3(a, 3, b, 3)));
     }
 }
