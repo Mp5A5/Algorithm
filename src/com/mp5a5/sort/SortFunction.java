@@ -58,7 +58,7 @@ public class SortFunction {
     }
 
     public int[] heapSort(int[] srcArray) {
-        // 构建堆
+        // 构建最大堆
         // 最后一个非叶子结点 srcArray.length / 2 - 1
         for (int i = srcArray.length / 2 - 1; i >= 0; i--) {
             adjustHeap(srcArray, i, srcArray.length);
